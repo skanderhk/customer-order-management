@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Bd_ClientDataSet4" targetNamespace="http://tempuri.org/Bd_ClientDataSet4.xsd" xmlns:mstns="http://tempuri.org/Bd_ClientDataSet4.xsd" xmlns="http://tempuri.org/Bd_ClientDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Bd_ClientConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Bd_ClientConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TP4.Properties.Settings.GlobalReference.Default.Bd_ClientConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProduitTableAdapter" GeneratorDataComponentClassName="ProduitTableAdapter" Name="Produit" UserDataComponentName="ProduitTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Bd_ClientConnectionString (Settings)" DbObjectName="Bd_Client.dbo.Produit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Categ_Prod FROM dbo.Produit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Categ_Prod" DataSetColumn="Categ_Prod" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Bd_ClientConnectionString (Settings)" DbObjectName="Bd_Client.dbo.Produit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT distinct(Categ_Prod) FROM dbo.Produit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Bd_ClientDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Bd_ClientDataSet4" msprop:Generator_UserDSName="Bd_ClientDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Produit" msprop:Generator_TableClassName="ProduitDataTable" msprop:Generator_TableVarName="tableProduit" msprop:Generator_RowChangedName="ProduitRowChanged" msprop:Generator_TablePropName="Produit" msprop:Generator_RowDeletingName="ProduitRowDeleting" msprop:Generator_RowChangingName="ProduitRowChanging" msprop:Generator_RowEvHandlerName="ProduitRowChangeEventHandler" msprop:Generator_RowDeletedName="ProduitRowDeleted" msprop:Generator_RowClassName="ProduitRow" msprop:Generator_UserTableName="Produit" msprop:Generator_RowEvArgName="ProduitRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Categ_Prod" msprop:Generator_ColumnVarNameInTable="columnCateg_Prod" msprop:Generator_ColumnPropNameInRow="Categ_Prod" msprop:Generator_ColumnPropNameInTable="Categ_ProdColumn" msprop:Generator_UserColumnName="Categ_Prod">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

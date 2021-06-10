@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4F41E29-8F17-4BE3-A628-5FD269708F14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TP4</RootNamespace>
+    <AssemblyName>TP4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bd_ClientDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bd_ClientDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bd_ClientDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bd_ClientDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bd_ClientDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bd_ClientDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bd_ClientDataSet3.cs">
+      <DependentUpon>Bd_ClientDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bd_ClientDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bd_ClientDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bd_ClientDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bd_ClientDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bd_ClientLigneCommande.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bd_ClientLigneCommande.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCommande.Designer.cs">
+      <DependentUpon>FCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListe_Cl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListe_Cl.Designer.cs">
+      <DependentUpon>FListe_Cl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListe_Prod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListe_Prod.Designer.cs">
+      <DependentUpon>FListe_Prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMenu.Designer.cs">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProduit.Designer.cs">
+      <DependentUpon>FProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FCommande.resx">
+      <DependentUpon>FCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListe_Cl.resx">
+      <DependentUpon>FListe_Cl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListe_Prod.resx">
+      <DependentUpon>FListe_Prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenu.resx">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProduit.resx">
+      <DependentUpon>FProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Bd_ClientDataSet.xsc">
+      <DependentUpon>Bd_ClientDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bd_ClientDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bd_ClientDataSet.xss">
+      <DependentUpon>Bd_ClientDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet1.xsc">
+      <DependentUpon>Bd_ClientDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bd_ClientDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bd_ClientDataSet1.xss">
+      <DependentUpon>Bd_ClientDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet2.xsc">
+      <DependentUpon>Bd_ClientDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bd_ClientDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bd_ClientDataSet2.xss">
+      <DependentUpon>Bd_ClientDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet3.xsc">
+      <DependentUpon>Bd_ClientDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bd_ClientDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bd_ClientDataSet3.xss">
+      <DependentUpon>Bd_ClientDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet4.xsc">
+      <DependentUpon>Bd_ClientDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bd_ClientDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bd_ClientDataSet4.xss">
+      <DependentUpon>Bd_ClientDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientLigneCommande.xsc">
+      <DependentUpon>Bd_ClientLigneCommande.xsd</DependentUpon>
+    </None>
+    <None Include="Bd_ClientLigneCommande.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bd_ClientLigneCommande.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bd_ClientLigneCommande.xss">
+      <DependentUpon>Bd_ClientLigneCommande.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassADO\ClassADO.csproj">
+      <Project>{cd8e3997-7b22-4546-91f0-1316347d246f}</Project>
+      <Name>ClassADO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassBL\ClassBL.csproj">
+      <Project>{9e65bb16-8064-4e16-98ec-b9cea7cd1912}</Project>
+      <Name>ClassBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
