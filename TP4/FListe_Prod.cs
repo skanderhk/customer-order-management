@@ -155,6 +155,7 @@ namespace TP4
                 Qte_Stock = qte
             };
             this.Close();
+        }
         private void metroLink1_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(Txt_Ref.Text))
